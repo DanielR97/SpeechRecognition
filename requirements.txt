@@ -1,0 +1,9 @@
+Update pip:
+    - python -m pip install pip
+
+Install libraries:
+    - python -m pip install speech_recognition
+
+ffmpeg for Windows (audio conversion):
+    - https://ffmpeg.zeranoe.com/builds/
+    - Add the ffmpeg\bin folder to path
