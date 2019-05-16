@@ -25,7 +25,9 @@ else:
     subprocess.call(['ffmpeg', '-y', '-i', audioFileInput,
                     'media/prueba.wav'], stdout=FNULL, stderr=subprocess.STDOUT)
     audioFileOutput = 'media/prueba.wav'
+    converted = True
     print('Audio convertido!')
+
 r = sr.Recognizer()
 file = sr.AudioFile(audioFileOutput)
 
@@ -42,3 +44,6 @@ with file as source:
         result = "No se ha podido transcribir el audio"
 
 print(result)
+
+if converted:
+    os.remove(audioFileOutput)
