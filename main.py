@@ -37,7 +37,7 @@ while languageSelected == None:
 
 
 # Convert the audio to WAV and ignore ffmpeg output
-audioFileInput = 'media/tests/canarias-corto.mp3'
+audioFileInput = 'media/canarias-corto.mp3'
 
 if audioFileInput.endswith('.wav'):
     audioFileOutput = audioFileInput
