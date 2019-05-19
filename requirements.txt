@@ -1,9 +1,23 @@
-Update pip:
-    - python -m pip install pip
+Windows:
 
-Install libraries:
-    - python -m pip install speech_recognition
+    Update pip:
+        - python -m pip install pip
 
-ffmpeg for Windows (audio conversion):
-    - https://ffmpeg.zeranoe.com/builds/
-    - Add the ffmpeg\bin folder to path
+    Install libraries:
+        - python -m pip install speech_recognition
+
+    ffmpeg for Windows (audio conversion):
+        - https://ffmpeg.zeranoe.com/builds/
+        - Add the ffmpeg\bin folder to path
+
+
+Ubuntu:
+
+    Install pip3:
+        - apt install python3-pip
+
+    Install libraries:
+        - pip3 install SpeechRecognition
+    
+    ffmpeg for Ubuntu:
+        - apt install ffmpeg
